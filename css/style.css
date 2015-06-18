@@ -1253,3 +1253,21 @@ pre .javascript .function {
     color: #fff;
   }
 }
+.holder:hover {
+  border: 5px solid #808080;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -ms-transition: border 0.3s;
+  transition: border 0.3s;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.holder:hover p {
+  opacity: 1 !important;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
