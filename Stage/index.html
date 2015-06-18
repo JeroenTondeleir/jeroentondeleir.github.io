@@ -100,14 +100,13 @@ Mijn stage liep van 26 januari tot 6 f">
 <p>•    <a href="/Dagverslagen/" title="De link naar de dagverslagen van mijn stage">Dagverslagen van de stage</a>: als u zich afvraagt wat ik tijdens de stage gedaan heb, dan kan u hier het antwoord vinden.<br>•    <a href="/Huisstijl/" title="De link naar mijn verslag over de huisstijl van mijn stagebedrijf.">Huisstijl van het stagebedrijf</a>: hier kan u een analyse vinden over de huisstijl van AZ Herentals.  </p>
 <h2 id="De_vragen_van_de_GIP-jury">De vragen van de GIP-jury</h2><hr>
 <h4 id="Wat_is_voor_dokters_belangrijk_aan_IT_/_Wat_verwachten_dokters_van_IT_/_het_netwerk:">Wat is voor dokters belangrijk aan IT / Wat verwachten dokters van IT / het netwerk:</h4><ul>
-<li><p>Welke info moeten dokters ten allen tijde binnen handbereik hebben van een patiënt?<br>  Puur theoretisch ‘moeten’ ze niks in handbereik hebben, nochtans kunnen ze het beste het medische dossier (allergieën, vorige ziektes) binnen handbereik hebben.</p>
+<li><p>Welke info moeten dokters ten allen tijde binnen handbereik hebben van een patiënt?<br>  Puur theoretisch ‘moeten’ ze niets in handbereik hebben, nochtans kunnen ze het beste het medische dossier (allergieën, vorige ziektes) binnen handbereik hebben.</p>
 </li>
 <li><p>Wat moet de informatica / computers / de servers bijhouden en faciliteren als een kind van 10 met een gebroken arm op de spoedafdeling komt?<br>  ° Foto’s RX in de beeldbank (PACS)<br>  ° Verslag van onderzoek (Medisch Dossier)<br>  ° ID-gegevens, Ziekenkas, … (administratieve zaken)</p>
 </li>
 <li>Hoe moet die info ingegeven worden, bewaard, bevraagd en hoe wordt deze ter beschikking van behandelende artsen gesteld?<br>  ° KWS / OAZIS / Medisch Dossier -&gt; Ingave door administratieve verpleging<br>  ° Bewaard -&gt; Netwerkopslag<br>  ° Bevraagd -&gt; via pc’s -&gt; toepassingen</li>
 </ul>
-<p>Bespreek de back-up- en recoverystrategie.</p>
-<ul>
+<h3 id="Bespreek_de_back-up-_en_recoverystrategie-">Bespreek de back-up- en recoverystrategie.</h3><ul>
 <li><p>Hoe vaak en hoe worden er back-ups genomen? Van welke data?<br>  -&gt; Elke dag incremental filesystemen servers oracle cluster hosts en VMWare rdm-filesystemen.<br>  -&gt; Elke dag transaction log’s en data-bestanden nvan databases<br>  -&gt; Elke dag backup van snapshots vmdk-files VMWare<br>  -&gt; Wekelijkse full backup van oracle cluster hosts </p>
 </li>
 <li><p>Recovery: hoe lang “mogen” bepaalde systemen (servers), databases, … “down gaan”?<br>  -&gt; Onderverdeling in critical / non-critical<br>  -&gt; Critical mag eigenlijk niet down tenzij gepland en in overleg met end-users<br>  -&gt; Non-critical kan iets makkelijker onderhoud op gebeuren<br>  -&gt; Voor alle data geldt dat die op high-availability systemen actief zijn.</p>
